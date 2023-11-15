@@ -18,7 +18,7 @@ function isPalindroma(parola) {
     parola = parola.toLowerCase();
 
     // Inverti la parola
-    var parolaInvertita = parola.split('').reverse().join('');
+    let parolaInvertita = parola.split('').reverse().join('');
 
     // Confronta la parola originale con quella invertita
     if (parola === parolaInvertita) {
@@ -29,7 +29,7 @@ function isPalindroma(parola) {
 }
 
 // Passo 1: Richiedere all'utente di inserire una parola
-var parolaUtente = prompt("Inserisci una parola:");
+let parolaUtente = prompt("Inserisci una parola:");
 
 // Passo 3: Restituire il risultato all'utente
 if (isPalindroma(parolaUtente)) {
